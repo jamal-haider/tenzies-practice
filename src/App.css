@@ -1,6 +1,54 @@
-  .container{
-    background-color: #F5F5F5;
-    height: 90vh;
-    border-radius: 5px; 
-  }
+.container{
+  background-color: #F5F5F5;
+  height: 90vh;
+  border-radius: 5px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.tenzies-heading{
+  font-size: 3em;
+  margin-bottom: .25em;
+  color: #2B283A;
+}
+.tenzies-description{
+  font-size: 1.15em;
+  text-align: center;
+  color: #2B283A;
+  
+}
+  
+.dice-list{
+  display: grid;
+  grid-template: auto auto / repeat(5, 1fr);
+  gap: 1.5em;
+  margin-top: 2em;
+}
+
+.die-face{
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25em;
+  padding: 1rem;
+  border-radius:5px;
+  cursor: pointer;
+}
+
+.tenzies-btn{
+  padding: .5em 2em;
+  border: none;
+  background-color: #5035FF;
+  color: white;
+  font-family: inherit;
+  font-size: 1.35em;
+  margin-top: 3rem;
+  border-radius: 4px;
+}
+
 

@@ -21,12 +21,16 @@ function App() {
     return diceArray
   }
 
-
   const diceElement = dice.map(die => <Die key={die.id} data={die} />)
 
   return (
     <div className='container'>
-      {diceElement}
+      <h1 className='tenzies-heading'>Tenzies</h1>
+      <p className='tenzies-description'>Roll until all dice are the same. Click each die to freeze it at its current value between rolls.</p>
+      <div className="dice-list">
+        {diceElement}
+      </div>
+      <button className='tenzies-btn'>Roll</button>
     </div>
   )
 }

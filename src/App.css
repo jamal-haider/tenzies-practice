@@ -30,7 +30,6 @@
 .die-face{
   width: 80px;
   height: 80px;
-  background-color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -49,6 +48,16 @@
   font-size: 1.35em;
   margin-top: 3rem;
   border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
+.tenzies-btn:focus{
+  outline: none;
+}
+
+.tenzies-btn:active{
+  background-color: #1035FF;
+  font-weight: 600;
+}
 
